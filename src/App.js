@@ -8,8 +8,12 @@ function App() {
   const [openedByFolder, setOpenedByFolder] = useState(false);
   const [currentActiveWindow, setCurrentActiveWindow] = useState("fileManager");
   const [fileWindows, setFileWindows] = useState([
-    { windowID: "fileWindow98", fileName: "file-window-placeholder.png" },
-    { windowID: "fileWindow99", fileName: "file-window-placeholder.png" },
+    {
+      windowID: "fileWindow98",
+      about:
+        "Welcome message, probably shouldn't be too long but give a good idea of what this site is about and why I did it like this. Probably also mention the mobile version and cross browser disregard.",
+      name: "Welcome to my portfolio",
+    },
   ]);
   const folderIconClickedHandler = () => {
     setOpenedByFolder(() => {
@@ -29,7 +33,6 @@ function App() {
         return file.windowID === `fileWindow${idNumber}`;
       });
     };
-    console.log(idExists());
     if (!idExists()) {
       setFileWindows(() => {
         return [
@@ -44,8 +47,6 @@ function App() {
     const fileRemovedArray = fileWindows.filter(
       (file) => file.windowID !== removeId
     );
-    console.log(removeId);
-    console.log(fileRemovedArray);
     setFileWindows(fileRemovedArray);
   };
   return (

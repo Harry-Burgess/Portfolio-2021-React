@@ -35,11 +35,11 @@
 
   &.image {
     width: 60vw;
-    height: 85vh;
+    max-height: 85vh;
   }
   &.text {
-    width: 40vw;
-    height: 60vh;
+    width: 30vw;
+    max-height: 40vh;
     background: rgba(17, 17, 17, 0.8);
     &.active-window {
       background: rgba(17, 17, 17, 1);

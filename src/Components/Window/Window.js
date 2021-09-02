@@ -47,6 +47,11 @@ const Window = (props) => {
         <TitleBar
           changeWindow={changeWindowHandler}
           activeWindowControl={windowControl}
+          title={
+            props.id === "fileManager"
+              ? "Harry Burgess — Portfolio"
+              : "File Window"
+          }
         />
         <div className={styles["window-body"]}>{props.children}</div>
       </div>

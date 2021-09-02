@@ -26,7 +26,7 @@ const FilePreview = (props) => {
           alt={`${props.info.fileName} preview`}
         />
         <div className={styles["file-info"]}>
-          <p>{props.info.fileName}</p>
+          <p>{props.info.fileName ? props.info.fileName : "Text file"}</p>
           <span>{props.info.size}</span>
         </div>
         <p>

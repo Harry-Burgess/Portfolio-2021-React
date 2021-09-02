@@ -29,7 +29,7 @@ const TitleBar = (props) => {
           onClick={expandHandler}
         ></button>
       </div>
-      <div className={styles["title-bar-text"]}>Harry Burgess — Portfolio</div>
+      <div className={styles["title-bar-text"]}>{props.title}</div>
     </div>
   );
 };
