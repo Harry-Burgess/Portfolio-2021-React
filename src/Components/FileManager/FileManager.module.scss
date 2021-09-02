@@ -1,0 +1,25 @@
+.finder-window {
+  width: 60vw;
+  height: 33vw;
+  min-height: 225px;
+  min-width: 400px;
+  top: 15%;
+  left: 10%;
+}
+.panes {
+  display: flex;
+  overflow: auto;
+  width: auto;
+  height: 100%;
+}
+.panes::-webkit-scrollbar {
+  height: 0.8em;
+}
+.panes::-webkit-scrollbar-track {
+  border: 1px solid rgba(102, 102, 102, 0.6);
+}
+.panes::-webkit-scrollbar-thumb {
+  background-color: #9c9c9c;
+  border-radius: 8px;
+  border: 1px solid rgba(17, 17, 17, 0.8);
+}

@@ -1,23 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import FileManager from "./Components/FileManager/FileManager";
+import FolderIcon from "./Components/FolderIcon";
+import FileWindow from "./Components/FileWindow/FileWindow";
 
 function App() {
+  const [openedByFolder, setOpenedByFolder] = useState(false);
+  const [currentActiveWindow, setCurrentActiveWindow] = useState("fileManager");
+  const [fileWindows, setFileWindows] = useState([
+    { windowID: 1, fileName: "file-window-placeholder.png" },
+    { windowID: 2, fileName: "file-window-placeholder.png" },
+  ]);
+  const folderIconClickedHandler = () => {
+    setOpenedByFolder(() => {
+      return !openedByFolder;
+    });
+  };
+  const removeOpenedByFolderHandler = () => {
+    setOpenedByFolder(false);
+  };
+  const activeWindowHandler = (id) => {
+    setCurrentActiveWindow(id);
+  };
+  const getRandomInt = (max) => {
+    return Math.floor(Math.random() * max);
+  };
+  const openFileHandler = (fileInfo) => {
+    const randomNum = getRandomInt(99999);
+    setFileWindows(() => {
+      return [...fileWindows, { windowID: randomNum, ...fileInfo }];
+    });
+    setCurrentActiveWindow(`fileWindow${randomNum}`);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FileManager
+        openedByFolder={openedByFolder}
+        removeOpenedByFolder={removeOpenedByFolderHandler}
+        activeWindow={activeWindowHandler}
+        active={currentActiveWindow === "fileManager" ? true : false}
+        id={"fileManager"}
+        openFile={openFileHandler}
+      />
+      <FolderIcon folderIconClicked={folderIconClickedHandler} />
+      {fileWindows.map((window) => {
+        return (
+          <FileWindow
+            activeWindow={activeWindowHandler}
+            active={
+              currentActiveWindow === `fileWindow${window.windowID}`
+                ? true
+                : false
+            }
+            id={`fileWindow${window.windowID}`}
+            key={window.windowID}
+            image={window.fileName}
+            text={window.about}
+          />
+        );
+      })}
     </div>
   );
 }

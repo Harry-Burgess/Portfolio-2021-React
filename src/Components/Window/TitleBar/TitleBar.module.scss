@@ -1,0 +1,66 @@
+.title-bar {
+  position: relative;
+  padding: 4px 80px 5px;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  background: rgba(102, 102, 102, 0.6);
+  .title-bar-text {
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .title-bar-controls {
+    display: flex;
+    position: absolute;
+    top: 6px;
+    bottom: 5px;
+    left: 15px;
+    button {
+      display: block;
+      height: 12px;
+      width: 12px;
+      padding: 0;
+      border-radius: 50%;
+      box-shadow: none;
+      background-color: #fff;
+      border: 1px solid;
+      cursor: pointer;
+      transition: background-color 50ms ease-out;
+      &.red {
+        background-color: #ff5f58;
+        border-color: #e1483f;
+        &:hover {
+          background-color: #ff5049;
+        }
+      }
+      &.yellow {
+        background-color: #ffbe2f;
+        border-color: #e0a028;
+        &:hover {
+          background-color: #ffb920;
+        }
+      }
+      &.green {
+        background-color: #2ac940;
+        border-color: #2bac2d;
+        &:hover {
+          background-color: #27bc3c;
+        }
+      }
+      &.disabled {
+        background-color: #2e2e2e;
+        border-color: #3a3a3a99;
+      }
+    }
+    button + button {
+      margin-left: 8px;
+    }
+  }
+}

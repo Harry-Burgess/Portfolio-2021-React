@@ -1,0 +1,13 @@
+.finder-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 3px 8px;
+  border-radius: 3px;
+  &.active {
+    background: #9c9c9c;
+    &.last-active {
+      background: #41b6e2;
+    }
+  }
+}

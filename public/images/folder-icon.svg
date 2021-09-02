@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="278px" height="213px" viewBox="0 0 278 213" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-142.000000, -112.000000)" stroke="#979797" stroke-width="3">
+            <g id="Group" transform="translate(145.000000, 115.000000)">
+                <path d="M8,-1.5 L75.6530403,-1.5 L76.091042,-0.778027373 C84.9794411,13.8730144 104.892433,21.2890625 136,21.2890625 C200,21.2890625 200,21.2890625 264,21.2890625 C269.246705,21.2890625 273.5,25.5423574 273.5,30.7890625 L273.5,168 C273.5,173.246705 269.246705,177.5 264,177.5 L8,177.5 C2.75329488,177.5 -1.5,173.246705 -1.5,168 L-1.5,8 C-1.5,2.75329488 2.75329488,-1.5 8,-1.5 Z" id="Rectangle-Copy" fill="#B6B6B6"></path>
+                <rect id="Rectangle" fill="#D8D8D8" x="-1.5" y="29.5" width="275" height="179" rx="8"></rect>
+                <path d="M0,165.5 L272,165.5" id="Line" stroke-linecap="square"></path>
+                <path d="M0,185.5 L272,185.5" id="Line-Copy" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
