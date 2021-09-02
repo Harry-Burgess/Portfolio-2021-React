@@ -32,6 +32,14 @@ function App() {
     });
     setCurrentActiveWindow(`fileWindow${randomNum}`);
   };
+  const removeFromArrayHandler = (removeId) => {
+    const fileRemovedArray = fileWindows.filter(
+      (file) => `fileWindow${file.windowID}` !== removeId
+    );
+    console.log(removeId);
+    console.log(fileRemovedArray);
+    setFileWindows(fileRemovedArray);
+  };
   return (
     <div className="App">
       <FileManager
@@ -56,6 +64,7 @@ function App() {
             key={window.windowID}
             image={window.fileName}
             text={window.about}
+            removeFromArray={removeFromArrayHandler}
           />
         );
       })}

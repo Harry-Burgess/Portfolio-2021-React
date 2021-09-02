@@ -14,6 +14,9 @@ const Window = (props) => {
     } else {
       setWindowControl(change);
     }
+    if (change !== "expanded" && props.id !== "fileManager") {
+      props.removeFromArray(props.id);
+    }
   };
   useEffect(() => {
     if (props.openedByFolder) {

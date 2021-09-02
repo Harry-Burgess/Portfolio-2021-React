@@ -6,7 +6,9 @@ const FileWindow = (props) => {
   const activeWindowHandler = (id) => {
     props.activeWindow(id);
   };
-
+  const removeFromArrayHandler = (removeId) => {
+    props.removeFromArray(removeId);
+  };
   return (
     <Window
       className={styles["file-window"]}
@@ -15,6 +17,7 @@ const FileWindow = (props) => {
       isActive={props.active}
       id={props.id}
       type={props.image ? "image" : "text"}
+      removeFromArray={removeFromArrayHandler}
     >
       {props.image ? (
         <img src={`/files/${props.image}`} alt="File content" />
