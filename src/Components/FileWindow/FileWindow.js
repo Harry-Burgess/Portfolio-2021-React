@@ -18,6 +18,7 @@ const FileWindow = (props) => {
       id={props.id}
       type={props.image ? "image" : "text"}
       removeFromArray={removeFromArrayHandler}
+      positionClass={props.positionClass}
     >
       {props.image ? (
         <img src={`/files/${props.image}`} alt="File content" />

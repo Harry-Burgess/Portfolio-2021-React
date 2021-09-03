@@ -34,10 +34,11 @@ function App() {
       });
     };
     if (!idExists()) {
+      const rndInt = Math.floor(Math.random() * 5) + 1;
       setFileWindows(() => {
         return [
           ...fileWindows,
-          { windowID: `fileWindow${idNumber}`, ...fileInfo },
+          { windowID: `fileWindow${idNumber}`, positon: rndInt, ...fileInfo },
         ];
       });
     }
@@ -70,6 +71,7 @@ function App() {
             image={window.fileName}
             text={window.about}
             removeFromArray={removeFromArrayHandler}
+            positionClass={`position${window.positon}`}
           />
         );
       })}

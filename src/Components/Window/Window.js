@@ -42,6 +42,7 @@ const Window = (props) => {
           ${styles[windowControl]}
           ${props.isActive ? styles["active-window"] : null}
           ${styles[props.type]}
+          ${styles[props.positionClass]}
         `}
       >
         <TitleBar
