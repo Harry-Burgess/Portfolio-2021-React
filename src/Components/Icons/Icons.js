@@ -1,7 +1,6 @@
 import React from "react";
 import FolderIcon from "./FolderIcon/FolderIcon";
 import Icon from "./Icon/Icon";
-import styles from "./Icons.module.scss";
 
 const Icons = (props) => {
   const folderIconClickedHandler = () => {

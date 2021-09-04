@@ -70,6 +70,8 @@ function App() {
             key={window.windowID}
             image={window.fileName}
             text={window.about}
+            link={window.externalLink}
+            madeWith={window.madeWith}
             removeFromArray={removeFromArrayHandler}
             positionClass={`position${window.positon}`}
           />

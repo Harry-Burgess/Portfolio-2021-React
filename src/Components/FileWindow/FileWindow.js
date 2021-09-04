@@ -23,7 +23,17 @@ const FileWindow = (props) => {
       {props.image ? (
         <img src={`/files/${props.image}`} alt="File content" />
       ) : (
-        <p>{props.text}</p>
+        <>
+          <p>{props.text}</p>
+          {props.madeWith ? <p>Made with: {props.madeWith}</p> : null}
+          {props.link ? (
+            <p>
+              <a href={props.link} target="_blank" rel="noreferrer">
+                Link to website
+              </a>
+            </p>
+          ) : null}
+        </>
       )}
     </Window>
   );
