@@ -1,0 +1,31 @@
+.icon {
+  position: fixed;
+  width: 80px;
+  z-index: 1;
+  &.linkedin {
+    top: 8em;
+    right: 2%;
+  }
+  &.github {
+    top: 14.8em;
+    right: 2%;
+  }
+  img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  h3 {
+    color: #fff;
+    text-shadow: 1px 1px 2px #404040;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.4em;
+    font-weight: 600;
+    cursor: default;
+  }
+}

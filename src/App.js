@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 import FileManager from "./Components/FileManager/FileManager";
-import FolderIcon from "./Components/FolderIcon";
+import Icons from "./Components/Icons/Icons";
 import FileWindow from "./Components/FileWindow/FileWindow";
 
 function App() {
@@ -60,7 +60,7 @@ function App() {
         id={"fileManager"}
         openFile={openFileHandler}
       />
-      <FolderIcon folderIconClicked={folderIconClickedHandler} />
+      <Icons folderIconClicked={folderIconClickedHandler} />
       {fileWindows.map((window) => {
         return (
           <FileWindow
