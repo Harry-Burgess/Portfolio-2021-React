@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import FileManager from "./Components/FileManager/FileManager";
 import Icons from "./Components/Icons/Icons";
 import FileWindow from "./Components/FileWindow/FileWindow";
+import TechStack from "./Components/TechStack/TechStack";
 
 function App() {
   const [openedByFolder, setOpenedByFolder] = useState(false);
@@ -77,6 +78,7 @@ function App() {
           />
         );
       })}
+      <TechStack />
     </div>
   );
 }

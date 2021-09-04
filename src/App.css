@@ -3,6 +3,7 @@
 } */
 .App {
   height: 100vh;
+  top: 0;
 }
 body {
   background: linear-gradient(252deg, #57c360, #41b6e2, #cc8bdf);

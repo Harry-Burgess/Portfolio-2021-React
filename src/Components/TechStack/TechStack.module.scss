@@ -1,0 +1,18 @@
+.tech-stack {
+  // position: fixed;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  .tech-stack-item {
+    display: inline-block;
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 0 2em;
+    font-size: 24px;
+  }
+}
