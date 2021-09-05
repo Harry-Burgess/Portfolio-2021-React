@@ -2,8 +2,11 @@
   position: fixed;
   top: 0.6em;
   right: 2%;
-  width: 80px;
+  width: 60px;
   z-index: 1;
+  @media screen and (min-width: 480px) {
+    width: 80px;
+  }
   img {
     user-select: none;
     -moz-user-select: none;

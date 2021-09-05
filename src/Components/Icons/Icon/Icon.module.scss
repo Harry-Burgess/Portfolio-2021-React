@@ -1,14 +1,23 @@
 .icon {
   position: fixed;
-  width: 80px;
+  width: 60px;
   z-index: 1;
+  @media screen and (min-width: 480px) {
+    width: 80px;
+  }
   &.linkedin {
-    top: 8em;
+    top: 6.5em;
     right: 2%;
+    @media screen and (min-width: 480px) {
+      top: 8em;
+    }
   }
   &.github {
-    top: 14.8em;
+    top: 12em;
     right: 2%;
+    @media screen and (min-width: 480px) {
+      top: 14.8em;
+    }
   }
   img {
     user-select: none;

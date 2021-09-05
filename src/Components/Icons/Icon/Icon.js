@@ -18,6 +18,7 @@ const Icon = (props) => {
           styles[props.text.toLowerCase()]
         }`}
         onDoubleClick={iconClickHandler}
+        onTouchStart={iconClickHandler}
         ref={nodeRef}
       >
         <img

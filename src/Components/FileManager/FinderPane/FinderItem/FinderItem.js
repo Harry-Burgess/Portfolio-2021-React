@@ -25,6 +25,7 @@ const FinderItem = (props) => {
       `}
       onClick={finderItemClickHandler}
       onDoubleClick={openFileHandler}
+      onTouchStart={openFileHandler}
     >
       {props.text}
     </li>

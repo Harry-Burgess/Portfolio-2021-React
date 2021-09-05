@@ -12,6 +12,7 @@ const FolderIcon = (props) => {
       <div
         className={`${styles["folder-icon"]} folder-handle`}
         onDoubleClick={openFolderHandler}
+        onTouchStart={openFolderHandler}
         ref={nodeRef}
       >
         <img
