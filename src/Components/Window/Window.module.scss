@@ -38,7 +38,7 @@
     top: 5%;
     right: 0%;
     @media screen and (min-width: 480px) {
-      width: 60vw;
+      width: 80vw;
       top: 5%;
       right: 15%;
       &.position1 {
@@ -62,6 +62,9 @@
         right: 5%;
       }
     }
+    @media screen and (min-width: 768px) {
+      width: 60vw;
+    }
   }
   &.text {
     width: 80vw;
@@ -72,6 +75,9 @@
     @media screen and (min-width: 480px) {
       top: 12%;
       right: 10%;
+      width: 60vw;
+    }
+    @media screen and (min-width: 768px) {
       width: 30vw;
     }
     &.active-window {

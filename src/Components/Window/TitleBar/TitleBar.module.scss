@@ -5,6 +5,9 @@
   border-radius: 5px 5px 0 0;
   background: rgba(102, 102, 102, 0.6);
   @media screen and (min-width: 480px) {
+    padding: 5px 80px 7px;
+  }
+  @media screen and (min-width: 768px) {
     padding: 4px 80px 5px;
   }
   .title-bar-text {
@@ -19,6 +22,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     @media screen and (min-width: 480px) {
+      font-size: 15px;
+    }
+    @media screen and (min-width: 768px) {
       font-size: 13px;
     }
   }
@@ -39,11 +45,13 @@
       border: 1px solid;
       cursor: pointer;
       @media screen and (min-width: 480px) {
-        height: 12px;
-        width: 12px;
+        height: 16px;
+        width: 16px;
         transition: background-color 50ms ease-out;
       }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 768px) {
+        height: 12px;
+        width: 12px;
       }
       &.red {
         background-color: #ff5f58;
