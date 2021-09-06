@@ -24,3 +24,4 @@ yarn-error.log*
 
 # privacy
 /src/Components/FileStructure.json
+/public/files
