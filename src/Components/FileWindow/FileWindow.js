@@ -25,7 +25,7 @@ const FileWindow = (props) => {
       ) : (
         <>
           <p>{props.text}</p>
-          {props.madeWith ? <p>Made with: {props.madeWith}</p> : null}
+          {props.madeWith ? <p>My involvement: {props.madeWith}</p> : null}
           {props.link ? (
             <p>
               <a href={props.link} target="_blank" rel="noreferrer">
