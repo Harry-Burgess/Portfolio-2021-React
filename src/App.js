@@ -12,7 +12,7 @@ function App() {
     {
       windowID: "fileWindow98",
       about:
-        "Welcome message, probably shouldn't be too long but give a good idea of what this site is about and why I did it like this. Probably also mention the mobile version and cross browser disregard.",
+        "Hi, I'm Harry. Welcome to my portfolio! This website is built with React.js, I haven't done much commercial work with React so I wanted to make a cool portfolio with it. Have a look around, if you like what you see you can call me on 07710454840 or email me at harryburgessjd@gmail.com",
       name: "Welcome to my portfolio",
     },
   ]);
