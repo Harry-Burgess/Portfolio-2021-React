@@ -22,7 +22,7 @@ const TechStack = () => {
         <li className={styles["tech-stack-item"]}>Sass</li>
         <li className={styles["tech-stack-item"]}>jQuery</li>
         <li className={styles["tech-stack-item"]}>Git</li>
-        <li className={styles["tech-stack-item"]}>...and more!</li>
+        <li className={styles["tech-stack-item"]}>...and more</li>
       </ul>
     </Marquee>
   );

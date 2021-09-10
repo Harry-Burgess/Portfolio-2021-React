@@ -4,6 +4,7 @@ import FileManager from "./Components/FileManager/FileManager";
 import Icons from "./Components/Icons/Icons";
 import FileWindow from "./Components/FileWindow/FileWindow";
 import TechStack from "./Components/TechStack/TechStack";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   const [openedByFolder, setOpenedByFolder] = useState(false);
@@ -55,6 +56,7 @@ function App() {
   };
   return (
     <div className="App">
+      <Contact />
       <FileManager
         openedByFolder={openedByFolder}
         removeOpenedByFolder={removeOpenedByFolderHandler}
