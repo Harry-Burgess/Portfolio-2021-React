@@ -11,8 +11,10 @@ function App() {
   const [fileWindows, setFileWindows] = useState([
     {
       windowID: "fileWindow98",
-      about:
-        "Hi, I'm Harry. Welcome to my portfolio! This website is built with React.js, I haven't done much commercial work with React so I wanted to make a cool portfolio with it. Have a look around, if you like what you see you can call me on 07710454840 or email me at harryburgessjd@gmail.com",
+      about: [
+        "Hi, I'm Harry. Welcome to my portfolio! This website is built with React.js, I haven't done much commercial work with React so I wanted to make a cool portfolio with it.",
+        "Have a look around, if you like what you see you can call me on 07710454840 or email me at harryburgessjd@gmail.com",
+      ],
       name: "Welcome to my portfolio",
     },
   ]);

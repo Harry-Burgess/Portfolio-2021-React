@@ -24,7 +24,9 @@ const FileWindow = (props) => {
         <img src={`/files/${props.image}`} alt="File content" />
       ) : (
         <>
-          <p>{props.text}</p>
+          {props.text.map((para) => {
+            return <p key={para.slice(0, 10)}>{para}</p>;
+          })}
           {props.madeWith ? (
             <p>My involvement / Tech used: {props.madeWith}</p>
           ) : null}

@@ -24,7 +24,6 @@ const FileManager = (props) => {
   };
   const activeItemTwoHandler = (activeItem, fileInfo, paneNumber) => {
     const itemSelected = activeItem.replace(/\s/g, "").replace(/'/g, "");
-    console.log(itemSelected);
     setPaneThreeContent(FileStructure.subSubFolders[itemSelected]);
     setFilePreviewInfo(fileInfo);
     setActivePane(paneNumber);

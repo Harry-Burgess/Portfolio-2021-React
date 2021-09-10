@@ -4,15 +4,12 @@ import styles from "./TitleBar.module.scss";
 const TitleBar = (props) => {
   const closeHandler = () => {
     props.changeWindow("closed");
-    console.log("Action");
   };
   const minimiseHandler = () => {
     props.changeWindow("minimised");
-    console.log("Action");
   };
   const expandHandler = () => {
     props.changeWindow("expanded");
-    console.log("Action");
   };
   return (
     <div className={`${styles["title-bar"]} window-handle`}>
