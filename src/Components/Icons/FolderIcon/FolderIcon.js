@@ -16,7 +16,7 @@ const FolderIcon = (props) => {
         ref={nodeRef}
       >
         <img
-          src="/images/folder-icon.svg"
+          src="./images/folder-icon.svg"
           alt="Folder icon"
           className="folder-image"
           draggable="false"

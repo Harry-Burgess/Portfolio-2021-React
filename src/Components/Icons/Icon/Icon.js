@@ -17,7 +17,7 @@ const Icon = (props) => {
         ref={nodeRef}
       >
         <img
-          src={`/images/${strippedText}-icon.svg`}
+          src={`./images/${strippedText}-icon.svg`}
           alt={`${props.text} icon`}
           draggable="false"
         />

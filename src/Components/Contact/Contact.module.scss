@@ -6,6 +6,9 @@
   color: rgba(255, 255, 255, 0.2);
   text-align: center;
   transform: translate(-50%, -50%);
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   font-weight: bold;
+  @media screen and (min-width: 480px) {
+    font-size: 2.4rem;
+  }
 }

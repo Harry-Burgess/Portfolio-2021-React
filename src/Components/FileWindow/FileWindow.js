@@ -21,7 +21,7 @@ const FileWindow = (props) => {
       positionClass={props.positionClass}
     >
       {props.image ? (
-        <img src={`/files/${props.image}`} alt="File content" />
+        <img src={`./files/${props.image}`} alt="File content" />
       ) : (
         <>
           {props.text.map((para) => {

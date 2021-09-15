@@ -23,7 +23,7 @@ const FilePreview = (props) => {
         <img
           onDoubleClick={openFileHandler}
           onTouchStart={openFileHandler}
-          src={`/files/${props.info.previewImage}`}
+          src={`./files/${props.info.previewImage}`}
           alt={`${props.info.fileName} preview`}
         />
         <div className={styles["file-info"]}>

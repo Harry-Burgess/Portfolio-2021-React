@@ -12,7 +12,7 @@ const Icons = (props) => {
       <FolderIcon folderIconClicked={folderIconClickedHandler} />
       <Icon text="LinkedIn" url="https://www.linkedin.com/in/harry-burgess/" />
       <Icon text="GitHub" url="https://github.com/Harry-Burgess" />
-      <Icon text="Download CV" url="/files/About/HarryBurgess_CV.pdf" />
+      <Icon text="Download CV" url="./files/About/HarryBurgess_CV.pdf" />
     </div>
   );
 };
