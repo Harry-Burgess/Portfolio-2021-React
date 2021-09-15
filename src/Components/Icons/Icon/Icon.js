@@ -7,22 +7,17 @@ const Icon = (props) => {
   const iconClickHandler = () => {
     window.open(props.url, "_blank");
   };
+  const strippedText = props.text.toLowerCase().replace(/\s/g, "");
   return (
-    <Draggable
-      handle={`.${props.text.toLowerCase()}`}
-      bounds="parent"
-      nodeRef={nodeRef}
-    >
+    <Draggable handle={`.${strippedText}`} bounds="parent" nodeRef={nodeRef}>
       <div
-        className={`${styles["icon"]} ${props.text.toLowerCase()} ${
-          styles[props.text.toLowerCase()]
-        }`}
+        className={`${styles["icon"]} ${strippedText} ${styles[strippedText]}`}
         onDoubleClick={iconClickHandler}
         onTouchStart={iconClickHandler}
         ref={nodeRef}
       >
         <img
-          src={`/images/${props.text.toLowerCase()}-icon.svg`}
+          src={`/images/${strippedText}-icon.svg`}
           alt={`${props.text} icon`}
           draggable="false"
         />
