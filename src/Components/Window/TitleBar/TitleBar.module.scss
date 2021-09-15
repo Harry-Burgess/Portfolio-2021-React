@@ -11,7 +11,7 @@
     padding: 4px 80px 5px;
   }
   .title-bar-text {
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: -0.3px;
     margin: 0;
     -webkit-user-select: none;
@@ -22,10 +22,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     @media screen and (min-width: 480px) {
-      font-size: 15px;
+      font-size: 0.9rem;
     }
     @media screen and (min-width: 768px) {
-      font-size: 13px;
+      font-size: 0.85rem;
     }
   }
   .title-bar-controls {

@@ -2,7 +2,7 @@
   position: fixed;
   color: #ebeaea;
   display: flex;
-  font-size: 16px;
+  font-size: 1rem;
   flex-direction: column;
   pointer-events: auto;
   overflow: hidden;
@@ -16,7 +16,7 @@
     0 10px 50px 0 rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(58, 52, 53, 0.6);
   @media screen and (min-width: 480px) {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
   .window-body {
     height: calc(100% - 25px);
