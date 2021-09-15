@@ -12,11 +12,12 @@ const TechStack = () => {
       <ul className={styles["tech-stack"]}>
         <li className={styles["tech-stack-item"]}>HTML</li>
         <li className={styles["tech-stack-item"]}>CSS</li>
-        <li className={styles["tech-stack-item"]}>Javascript (ES6)</li>
+        <li className={styles["tech-stack-item"]}>Javascript (ES6+)</li>
         <li className={styles["tech-stack-item"]}>React.js</li>
         <li className={styles["tech-stack-item"]}>Python</li>
         <li className={styles["tech-stack-item"]}>Umbraco</li>
-        <li className={styles["tech-stack-item"]}>ASP.NET</li>
+        <li className={styles["tech-stack-item"]}>Razor / ASP.NET</li>
+        <li className={styles["tech-stack-item"]}>HTML emails</li>
         <li className={styles["tech-stack-item"]}>Drupal</li>
         <li className={styles["tech-stack-item"]}>Selenium</li>
         <li className={styles["tech-stack-item"]}>Sass</li>
