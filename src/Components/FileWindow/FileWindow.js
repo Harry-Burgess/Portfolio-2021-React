@@ -21,7 +21,19 @@ const FileWindow = (props) => {
       positionClass={props.positionClass}
     >
       {props.image ? (
-        <img src={`./files/${props.image}`} alt="File content" />
+        <>
+          <img src={`./files/${props.image}`} alt="File content" />
+          {props.link ? (
+            <a
+              href={props.link}
+              target="_blank"
+              rel="noreferrer"
+              className={styles["with-image"]}
+            >
+              Visit website
+            </a>
+          ) : null}
+        </>
       ) : (
         <>
           {props.text.map((para) => {

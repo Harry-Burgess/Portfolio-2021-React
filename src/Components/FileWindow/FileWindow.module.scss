@@ -10,5 +10,19 @@
   }
   a {
     color: #ebeaea;
+    &.with-image {
+      font-weight: bold;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: rgba(17, 17, 17, 0.8);
+      padding: 0.5em 1em;
+      text-decoration: none;
+      border-radius: 5px 0 0 0;
+      transition: 0.4s;
+      &:hover {
+        background: rgba(17, 17, 17, 0.9);
+      }
+    }
   }
 }
